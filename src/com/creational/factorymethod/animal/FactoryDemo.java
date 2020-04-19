@@ -1,4 +1,4 @@
-package com.creational.factorymethod;/*
+package com.creational.factorymethod.animal;/*
  * @project demo-JAVA-DesignPattern
  * @author Duc on 4/19/2020
  */
