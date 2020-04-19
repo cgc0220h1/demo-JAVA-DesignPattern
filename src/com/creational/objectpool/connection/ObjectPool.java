@@ -1,4 +1,4 @@
-package com.creational.objectpool;/*
+package com.creational.objectpool.connection;/*
  * @project demo-JAVA-DesignPattern
  * @author Duc on 4/19/2020
  */

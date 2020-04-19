@@ -1,11 +1,10 @@
-package com.creational.objectpool;/*
+package com.creational.objectpool.connection;/*
  * @project demo-JAVA-DesignPattern
  * @author Duc on 4/19/2020
  */
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.SQLData;
 import java.sql.SQLException;
 
 public class JDBConnectionPool extends ObjectPool<Connection> {
