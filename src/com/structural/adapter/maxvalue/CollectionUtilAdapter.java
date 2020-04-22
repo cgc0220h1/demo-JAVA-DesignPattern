@@ -11,8 +11,19 @@ public class CollectionUtilAdapter {
     private CollectionUtil util;
 
     public CollectionUtilAdapter() {
-        CollectionOperations operator = new OperatorOne();
-        util = new CollectionUtil(operator);
+        CollectionOperations demoOperation = new CollectionOperations() {
+            @Override
+            public int findMax(Set<Integer> numbers) {
+                int max = 0;
+                for (int number : numbers) {
+                    if (number > max) {
+                        max = number;
+                    }
+                }
+                return max;
+            }
+        };
+        util = new CollectionUtil(demoOperation);
     }
 
     public void printMaxValue(List<Integer> numbers) {
