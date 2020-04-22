@@ -19,7 +19,8 @@ public class Client {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        //Vì việc download trên khó sử dụng với User. Nên dùng một Adapter để
+
+        //Vì việc download trên khó sử dụng với User hay các dev khác. Nên dùng một Adapter để
         //Thay đổi đầu vào thành String, giúp dễ sử dụng hơn.
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter Address: ");
