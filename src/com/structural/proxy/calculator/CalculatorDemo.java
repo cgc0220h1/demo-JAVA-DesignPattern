@@ -1,9 +1,9 @@
-package com.structural.proxy;/*
+package com.structural.proxy.calculator;/*
  * @project demo-JAVA-DesignPattern
  * @author Duc on 4/22/2020
  */
 
-public class MainCalculator {
+public class CalculatorDemo {
     public static void main(String[] args) {
         Calculator calculator = new MathCalculatorProxy();
         double result = calculator.add(1, 2);

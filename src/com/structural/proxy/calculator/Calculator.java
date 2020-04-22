@@ -1,4 +1,4 @@
-package com.structural.proxy;/*
+package com.structural.proxy.calculator;/*
  * @project demo-JAVA-DesignPattern
  * @author Duc on 4/22/2020
  */
