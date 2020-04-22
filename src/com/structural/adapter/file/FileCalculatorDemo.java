@@ -10,8 +10,8 @@ public class FileCalculatorDemo {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter file or folder path: ");
         String path = scanner.nextLine();
-        FileCalculator fileCalculator = new FileCalculatorAdapter();
-        Client client = new Client(fileCalculator);
-        client.printFileSize(path);
+        FileCalculator calculator = new FileCalculatorUseLibs();
+        FileCalculatorAdapter fileCalculatorAdapter = new FileCalculatorAdapter(calculator);
+        fileCalculatorAdapter.printFileSize(path);
     }
 }

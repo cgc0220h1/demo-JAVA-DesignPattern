@@ -3,16 +3,15 @@ package com.structural.adapter.file;/*
  * @author Duc on 4/22/2020
  */
 
-import com.codegym.FileUtil;
+public class FileCalculatorAdapter {
+    private FileCalculator calculator;
 
-import java.io.File;
+    public FileCalculatorAdapter(FileCalculator calculator) {
+        this.calculator = calculator;
+    }
 
-public class FileCalculatorAdapter implements FileCalculator {
-
-    @Override
-    public long calculateSize(String path) {
-        FileUtil fileUtil = new FileUtil();
-        File file = new File(path);
-        return fileUtil.calculateSize(file);
+    public void printFileSize(String path) {
+        long size = calculator.calculateSize(path);
+        System.out.println("Size: " + size);
     }
 }
