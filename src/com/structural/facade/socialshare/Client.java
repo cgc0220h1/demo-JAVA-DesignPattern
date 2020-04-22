@@ -1,4 +1,4 @@
-package com.structural.facade;/*
+package com.structural.facade.socialshare;/*
  * @project demo-JAVA-DesignPattern
  * @author Duc on 4/22/2020
  */

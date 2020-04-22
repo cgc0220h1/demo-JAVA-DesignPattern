@@ -1,10 +1,11 @@
-package com.structural.facade;/*
+package com.structural.facade.socialshare;/*
  * @project demo-JAVA-DesignPattern
  * @author Duc on 4/22/2020
  */
 
-public class LinkedIn implements SocialShare {
+public class Twitter implements SocialShare {
     private String message;
+
 
     @Override
     public void setMessage(String message) {
@@ -13,6 +14,6 @@ public class LinkedIn implements SocialShare {
 
     @Override
     public void share() {
-        System.out.println("Sharing to LinkedIn: " + message);
+        System.out.println("Sharing to Twitter: " + message);
     }
 }
